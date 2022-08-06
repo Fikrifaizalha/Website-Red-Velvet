@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fauna One', serif;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+
+/* <-------------------------------------    HEADER START   -------------------------------------> */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(img/Background/utama.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+/* <--------------- NAVBAR START --------------> */
+.container nav {
+    padding: 20px 5%;
+}
+
+.logo {
+    width: 65px;
+    padding-top: 10px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav ul li a::after {
+    background: #F6B6B4;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#hamburger {
+    position: relative;
+    top: -50px;
+    width: 42px;
+    display: none;
+    float: right;
+    opacity: 0.7;
+    margin: 12px;
+}
+
+/* <--------------- RESPONSIVE NAVBAR  --------------> */
+@media (max-width: 600px) {
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: right;
+    }
+
+    nav ul li {
+        color: #fff;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    #hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* <--------------- NAVBAR END --------------> */
+
+/* <--------------- HERO START --------------> */
+.hero {
+    width: 100%;
+    top: 45%;
+    position: absolute;
+}
+
+.left-col {
+    margin-left: 3%;
+    padding: 10px;
+}
+
+.left-col h1 {
+    font-size: 80px;
+    color: #fff;
+    line-height: 40px;
+    float: left;
+}
+
+.right-col {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 6%;
+}
+
+.right-col p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.right-col {
+    margin-top: 20px;
+}
+
+#icon {
+    width: 70px;
+    cursor: pointer;
+}
+
+.sm {
+    width: 200px;
+}
+
+/* <--------------- RESPONSIVE HERO --------------> */
+@media (max-width: 600px) {
+
+    .left-col h1 {
+        font-size: 20px;
+    }
+
+    .left-col {
+        display: flex;
+        justify-content: center;
+        padding: 30%;
+    }
+
+    .right-col {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .right-col p {
+        font-size: 14px;
+    }
+
+    #icon {
+        width: 50px;
+    }
+
+    .sm {
+        display: none;
+    }
+}
+
+/* <--------------- HERO END --------------> */
+
+/* <-------------------------------------    HEADER END    -------------------------------------> */
+
+
+
+/* <-------------------------------------    MAIN START    -------------------------------------> */
+
+/* <--------------- MEMBER START --------------> */
+#member {
+    width: 100%;
+    background: url(img/Background/pink.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 3em;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: #111;
+    transition: 0.5s;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-5 {
+    flex-basis: 20%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.col-5 h2 {
+    color: aliceblue;
+    font-family: 'Fauna One', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-1 {
+    width: 250px;
+    padding: 20px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.img-1:hover {
+    transform: translateY(-5px)
+}
+
+a img {
+    width: 30px;
+    align-items: center;
+}
+
+/* <--------------- RESPONSIVE MEMBER --------------> */
+@media (max-width: 600px) {
+
+    .title {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .col-5 h2 {
+        font-size: 20px;
+    }
+
+    a img {
+        width: 25px;
+    }
+}
+
+/* <--------------- MEMBER END --------------> */
+
+/* <--------------- ARTICLE START --------------> */
+.content {
+    width: 100%;
+    background: url(img/Background/blue.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 50px;
+    margin: 10px;
+    padding: 50px;
+}
+
+.paragraf {
+    color: #fff;
+    font-family: 'Fauna One', serif;
+    font-size: 20px;
+    flex-basis: 50%;
+    line-height: 2;
+}
+
+article {
+    padding: 10px;
+}
+
+.img-article {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px
+}
+
+/* <--------------- RESPONSIVE ARTICLE --------------> */
+@media (max-width: 600px) {
+
+    .content h1 {
+        font-size: 20px;
+        letter-spacing: 2PX;
+        margin: -45px;
+    }
+
+    .paragraf {
+        font-size: 15px;
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
+
+/* <--------------- ARTICLE END --------------> */
+
+/* <--------------- DISCOGRGRAPHY START --------------> */
+#discography {
+    width: 100%;
+    background: url(img/Background/pink.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.img-gallery {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin: auto;
+}
+
+.img-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.img-gallery img:hover {
+    transform: translateY(-5px)
+}
+
+/* <--------------- RESPONSIVE DICOGRGRAPHY --------------> */
+@media (max-width: 600px) {
+
+    .img-gallery {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* <--------------- DISCOGRGRAPHY END --------------> */
+
+/* <--------------- ABOUT US START --------------> */
+#about {
+    width: 100%;
+    background: url(img/Background/pink\ blue.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.content-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 200px;
+    padding: 50px;
+}
+
+.company {
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.artist {
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: whitesmoke;
+    letter-spacing: 3px;
+}
+
+.about-p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Fauna One', serif;
+    line-height: 2;
+}
+
+.img-about img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-3 {
+    align-items: center;
+}
+
+.img-3 img {
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+/* <--------------- RESPONSIVE ABOUT --------------> */
+@media (max-width: 600px) {
+
+    #about {
+        width: 100%;
+        background: url(img/Background/blue.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .content-about {
+        display: grid;
+        grid-gap: 30px;
+
+    }
+
+    .about-p {
+        font-size: 15px;
+    }
+
+    .company {
+        font-size: 10px;
+    }
+
+    .artist {
+        font-size: 30px;
+    }
+
+    .img-about img {}
+}
+
+/* <--------------- ABOUT END --------------> */
+
+/* <--------------- ACTIVITIES START --------------> */
+#activities {
+    width: 100%;
+    background: url(img/Background/blue\ pink.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+.row-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-2 {
+    color: #fff;
+    flex-basis: 50%;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.col-2 p {
+    font-family: 'Fauna One', serif;
+    font-size: 20px;
+    line-height: 2;
+}
+
+aside {
+    text-align: center;
+}
+
+aside img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+aside h1 {
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+aside h3 {
+    font-family: 'Fauna One', serif;
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: center;
+}
+
+.img-4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-4 img {
+    width: 100%;
+    padding: 10px;
+}
+
+.img-4 a img {
+    width: 50px;
+}
+
+/* <--------------- RESPONSIVE ACTIVITIES--------------> */
+@media (max-width: 600px) {
+
+    #activities {
+        width: 100%;
+        background: url(img/Background/pink.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .col-2 {
+        margin: 20px;
+        flex-basis: 100%;
+    }
+
+    .col-2 h2 {
+        font-size: 20px;
+    }
+
+    .col-2 p {
+        font-size: 15px;
+    }
+
+    aside h1 {
+        font-size: 20px;
+    }
+
+    aside h3 {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    aside img {
+        width: 250px;
+    }
+
+    .img-4 a img {
+        width: 45px;
+    }
+}
+
+/* <--------------- ACTIVITIES END --------------> */
+
+
+/* <-------------------------------------    MAIN END   -------------------------------------> */
+
+
+
+/* <-------------------------------------    FOOTER START   -------------------------------------> */
+footer {
+    width: 100%;
+    background: #111;
+    font-family: 'Fauna One', serif;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.sosmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 3rem 0;
+}
+
+.sosmed a {
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer-bottom {
+    width: 100%;
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 100;
+}
+
+/* <--------------- RESPONSIVE  FOOTER --------------> */
+@media (max-width: 600px) {
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* <-------------------------------------    FOOTER END   -------------------------------------> */
