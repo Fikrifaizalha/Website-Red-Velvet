@@ -76,6 +76,7 @@ nav ul li a:hover::after {
     display: none;
     float: right;
     opacity: 0.7;
+
 }
 
 /* <--------------- RESPONSIVE NAVBAR  --------------> */
@@ -83,10 +84,10 @@ nav ul li a:hover::after {
 
     nav ul {
         position: absolute;
-        width: 103%;
+        width: 100%;
         position: absolute;
-        top: 57px;
-        left: 0;
+        top: 60px;
+        left: 0px;
         overflow: hidden;
         transition: max-height 0.5s;
     }
@@ -110,6 +111,7 @@ nav ul li a:hover::after {
         float: right;
         display: block;
         cursor: pointer;
+        right: 10px;
     }
 }
 
