@@ -173,7 +173,8 @@ nav ul li a:hover::after {
     .left-col {
         display: flex;
         justify-content: center;
-        padding: 33%;
+        padding: 27%;
+        margin-left: 10%;
     }
 
     .right-col {
