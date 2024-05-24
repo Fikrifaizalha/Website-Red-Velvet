@@ -167,13 +167,13 @@ nav ul li a:hover::after {
 
     .left-col h1 {
         width: 100%;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .left-col {
         display: flex;
         justify-content: center;
-        padding: 30%;
+        padding: 33%;
     }
 
     .right-col {
@@ -183,7 +183,7 @@ nav ul li a:hover::after {
 
     .right-col p {
         font-size: 14px;
-        margin-right: 5px;
+        margin-right: -2px;
     }
 
     #icon {
